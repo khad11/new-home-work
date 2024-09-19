@@ -118,6 +118,7 @@ header {
 .hero {
   display: flex;
   align-items: center;
+  gap: 3rem;
   justify-content: space-between;
   padding: 0 5rem 10rem 5rem;
 }
@@ -192,7 +193,7 @@ header {
   margin-top: 1.2rem;
   display: flex;
   justify-content: space-between;
-  gap: 3rem;
+  gap: 1rem;
   align-items: center;
   padding: 1.7rem 13rem;
   background-color: rgba(255, 255, 255, 0.1);
@@ -365,6 +366,50 @@ footer {
   border: 1px solid rgb(187, 100, 100);
 }
 
+@media screen and (max-width: 1050px) {
+  .hero {
+    flex-direction: column;
+    text-align: left;
+    gap: 5rem;
+  }
+  .btn {
+    display: flex;
+    justify-content: center;
+  }
+  .hero__service {
+    text-align: center;
+  }
+  .hero__service__box {
+    margin-top: 5rem;
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+@media screen and (max-width: 825px) {
+  .articles__main__pricing {
+    flex-direction: column;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 950px) {
+  .coments__box {
+    flex-direction: column;
+  }
+  .coments__item {
+    flex-direction: row;
+    gap: 3rem;
+    max-width: 75rem;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 4rem;
+  }
+  .coments__item__word {
+    padding-bottom: 0;
+  }
+  .coments__item__name {
+    padding: 0;
+  }
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
